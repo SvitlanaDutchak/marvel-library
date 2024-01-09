@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/main.scss';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Layout from './Layout/Layout.jsx';
 
-function App() {
+import { Routes, Route } from "react-router-dom";
+
+import Home from './pages/Home'
+import Characters from './pages/Characters';
+import Comics from './pages/Comics';
+
+const App =() => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout>
+    <Routes> 
+        <Route path='/' element={<Home />} /> 
+        <Route path="characters" element={<Characters />} />
+        <Route path="comics" element={<Comics />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>404! There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </Layout>
   );
 }
 

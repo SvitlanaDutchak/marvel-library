@@ -1,0 +1,21 @@
+.hero {
+  background: url(../images/marvel-comics-character-burst-i28458.jpg);
+  width: 100%;
+  height: 75vh;
+  position: relative;
+
+  &__owerlay {
+    background: rgba(128, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+  }
+}

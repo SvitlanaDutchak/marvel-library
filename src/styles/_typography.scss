@@ -1,0 +1,87 @@
+.title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: $light-color;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+  &-animation {
+    font-size: 70px;
+    text-shadow: -2px 0 $orange, 0 2px $orange, 2px 0 $orange, 0 -2px $orange;
+    margin-top: 30px;
+  }
+
+  &-footer {
+    font-size: 48px;
+    color: $light-color;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 22px;
+      background-color: rgba(162, 21, 16, 0.5);
+      bottom: -1px;
+      left: -30px;
+    }
+  }
+}
+
+.text {
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: $light-color;
+  text-transform: uppercase;
+
+  &-label {
+    color: $light-color;
+    letter-spacing: 0.3em;
+    margin: 14px 0;
+  }
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-shadow: 3px 2px 4px black;
+  & + .text {
+    color: $main-color;
+  }
+}
+
+.slider-title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slider-text {
+  color: rgba(187 187 187 / 75%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  font-weight: 700;
+  margin: 6px 0;
+  text-align: left;
+  font-size: 20px;
+}
